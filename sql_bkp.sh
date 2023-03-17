@@ -54,7 +54,7 @@ for DOCKER in "${DOCKER_DB[@]}"; do
    # set DB variables for docker command
    DBUSERNAME=${DOCKER_DB_ARRAY[2]}
    echo "$NOW DB username is '$DBNAME'" >> $LOGDIR$LOGFILE
-   DBPASSWORD="Lhoos1eoQ-"
+   DBPASSWORD="$(cat ../pwd)"
    echo "$NOW DB password is '$DBPASSWORD'" >> $LOGDIR$LOGFILE
    DBNAME=${DOCKER_DB_ARRAY[1]}
    echo "$NOW DB name is '$DBNAME'" >> $LOGDIR$LOGFILE
